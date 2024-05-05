@@ -1,0 +1,56 @@
+CREATE TABLE Captains (
+    ID INT PRIMARY KEY,
+    FirstName NVARCHAR(50) NOT NULL,
+    LastName NVARCHAR(50) NOT NULL,
+    Address NVARCHAR(100) NOT NULL,
+    Nationality NVARCHAR(50) NOT NULL,
+    DateOfBirth DATE NOT NULL,
+    HireDate DATE NOT NULL,
+    Licenses NVARCHAR(100) NOT NULL,
+    UNIQUE (Licenses)
+);
+
+CREATE TABLE Crew (
+    ID INT PRIMARY KEY,
+    FirstName NVARCHAR(50) NOT NULL,
+    LastName NVARCHAR(50) NOT NULL,
+    Address NVARCHAR(100) NOT NULL,
+    Nationality NVARCHAR(50) NOT NULL,
+    DateOfBirth DATE NOT NULL,
+    HireDate DATE NOT NULL,
+    Position NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Ships (
+    SerialNumber INT PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL,
+    Weight FLOAT NOT NULL,
+    YearOfConstruction INT NOT NULL,
+    ShipType NVARCHAR(50) NOT NULL,
+    PassengerCapacity INT NULL,
+    PetrolCapacityInLiters FLOAT NULL,
+    ContainerCapacity INT NULL,
+    MaximumWeightForContainers FLOAT NULL
+);
+
+CREATE TABLE Ports (
+    Name NVARCHAR(100) NOT NULL UNIQUE,
+    Country NVARCHAR(100) NOT NULL UNIQUE,
+    Population INT NOT NULL,
+    RequiresPassport BIT NOT NULL,
+    DockingFee DECIMAL(10, 2) NOT NULL,
+    PRIMARY KEY (Name, Country)
+);
+
+CREATE TABLE Voyages (
+    ID INT PRIMARY KEY,
+    ShipSerialNumber INT,
+    CaptainID INT,
+    CrewID INT,
+    DepartureDate DATE NOT NULL,
+    ReturnDate DATE NOT NULL,
+    DeparturePort NVARCHAR(100) NOT NULL,
+    FOREIGN KEY (ShipSerialNumber) REFERENCES Ships(SerialNumber),
+    FOREIGN KEY (CaptainID) REFERENCES Captains(ID),
+    FOREIGN KEY (CrewID) REFERENCES Crew(ID)
+);
