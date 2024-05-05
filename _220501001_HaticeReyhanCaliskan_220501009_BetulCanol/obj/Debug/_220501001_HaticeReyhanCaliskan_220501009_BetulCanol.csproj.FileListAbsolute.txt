@@ -1,0 +1,15 @@
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\_220501001_HaticeReyhanCaliskan_220501009_BetulCanol.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\tab_deneme.CrewForm.resources
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\tab_deneme.Form1.resources
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\tab_deneme.PortsForm.resources
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\tab_deneme.Properties.Resources.resources
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\tab_deneme.ShipsForm.resources
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\tab_deneme.VoyagesForm.resources
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\_220501001_HaticeReyhanCaliskan_220501009_BetulCanol.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\_220501001_HaticeReyhanCaliskan_220501009_BetulCanol.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\tab_deneme.exe
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\tab_deneme.pdb
+C:\Users\pc\source\repos\tab_deneme\bin\Debug\tab_deneme.exe.config
+C:\Users\pc\source\repos\tab_deneme\bin\Debug\tab_deneme.exe
+C:\Users\pc\source\repos\tab_deneme\bin\Debug\tab_deneme.pdb
+C:\Users\pc\source\repos\tab_deneme\obj\Debug\tab_deneme.CaptainsForm.resources
